@@ -29,6 +29,8 @@ const numbersLessThan501 = crazyNumbers.filter(number => number < 501)
 
 console.log(numbersLessThan501)
 
+
+
 /*
   03
 
@@ -37,6 +39,14 @@ console.log(numbersLessThan501)
 */
 
 const numbers = [5, 7, 3]
+
+// Resolution
+
+const squaredNumbers = numbers.map(number => number ** 2)
+
+console.log(squaredNumbers)
+
+
 
 /*
   04
