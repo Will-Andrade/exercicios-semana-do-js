@@ -69,11 +69,13 @@ const tarantinoMovies = [
   { name: 'Kill Bill: Volume 1', release: 2003 }
 ]
 
-//Resolution
+// Resolution
 
 const moviesReleasedBefore2000 = tarantinoMovies.filter(movie => movie.release < 2000)
 
 console.log(moviesReleasedBefore2000)
+
+
 
 /*
   05
@@ -91,6 +93,14 @@ const tvShows = [
   { name: 'House M.D.', releaseYear: 2004 },
   { name: 'Watchmen', releaseYear: 2019 }
 ]
+
+// Resolution
+
+const namesOfTVShows = tvShows.map(tvShow => tvShow.name)
+
+console.log(namesOfTVShows)
+
+
 
 /*
   06
