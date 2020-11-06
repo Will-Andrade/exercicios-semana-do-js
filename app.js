@@ -69,6 +69,12 @@ const tarantinoMovies = [
   { name: 'Kill Bill: Volume 1', release: 2003 }
 ]
 
+//Resolution
+
+const moviesReleasedBefore2000 = tarantinoMovies.filter(movie => movie.release < 2000)
+
+console.log(moviesReleasedBefore2000)
+
 /*
   05
 
