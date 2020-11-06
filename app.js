@@ -7,7 +7,7 @@
 
 const randomNumbers = [10, 30, 15, 25, 50, 40, 5]
 
-// Resolução ->
+// Resolution ->
 
 const oddNumbers = randomNumbers.filter(number => number % 2)
 
@@ -22,6 +22,12 @@ console.log(oddNumbers)
 */
 
 const crazyNumbers = [937, 5, 395, 402, 501, 333, 502, 781, 3, 691]
+
+// Resolution
+
+const numbersLessThan501 = crazyNumbers.filter(number => number < 501)
+
+console.log(numbersLessThan501)
 
 /*
   03
