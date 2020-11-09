@@ -9,7 +9,7 @@ const randomNumbers = [10, 30, 15, 25, 50, 40, 5]
 
 // Resolution ->
 
-const oddNumbers = randomNumbers.filter(number => number % 2)
+const oddNumbers = randomNumbers.filter(number => number % 2 === 1)
 
 console.log(oddNumbers)
 
@@ -25,7 +25,13 @@ const crazyNumbers = [937, 5, 395, 402, 501, 333, 502, 781, 3, 691]
 
 // Resolution
 
-const numbersLessThan501 = crazyNumbers.filter(number => number < 501)
+const numbersLessThan501 = crazyNumbers.reduce((accumulator, number) => {
+  if (number < 501) {
+    accumulator += 1
+  }
+
+  return accumulator
+}, 0) 
 
 console.log(numbersLessThan501)
 
@@ -121,6 +127,14 @@ const cart = [
   { name: 'Death Stranding', price: 149.99 }
 ]
 
+// Resolution
+
+const gameNames = cart.reduce((accumulator, game, index) => {
+  return `${accumulator} - ${game.name} ${index + 1} \n`
+}, '')
+
+
+console.log(gameNames)
 /*
   - Nome 1
   - Nome 2
